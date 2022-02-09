@@ -4108,8 +4108,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "DSharpPlus >= 4.1.0",
-      "Newtonsoft.Json >= 13.0.1"
+      "DSharpPlus >= 4.1.0"
     ]
   },
   "packageFolders": {
@@ -4119,11 +4118,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\snib\\Documents\\CPPROJ\\Stationer\\Stationer\\Stationer.csproj",
+      "projectUniqueName": "C:\\Users\\snib\\Documents\\CSPROJ\\Stationer\\Stationer\\Stationer.csproj",
       "projectName": "Stationer",
-      "projectPath": "C:\\Users\\snib\\Documents\\CPPROJ\\Stationer\\Stationer\\Stationer.csproj",
+      "projectPath": "C:\\Users\\snib\\Documents\\CSPROJ\\Stationer\\Stationer\\Stationer.csproj",
       "packagesPath": "C:\\Users\\snib\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\snib\\Documents\\CPPROJ\\Stationer\\Stationer\\obj\\",
+      "outputPath": "C:\\Users\\snib\\Documents\\CSPROJ\\Stationer\\Stationer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4159,10 +4158,6 @@
           "DSharpPlus": {
             "target": "Package",
             "version": "[4.1.0, )"
-          },
-          "Newtonsoft.Json": {
-            "target": "Package",
-            "version": "[13.0.1, )"
           }
         },
         "imports": [

@@ -1,0 +1,5 @@
+C:\Users\snib\Documents\CSPROJ\Stationer\Stationer\obj\Debug\net6.0\Stationer.csproj.AssemblyReference.cache
+C:\Users\snib\Documents\CSPROJ\Stationer\Stationer\obj\Debug\net6.0\Stationer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\snib\Documents\CSPROJ\Stationer\Stationer\obj\Debug\net6.0\Stationer.AssemblyInfoInputs.cache
+C:\Users\snib\Documents\CSPROJ\Stationer\Stationer\obj\Debug\net6.0\Stationer.AssemblyInfo.cs
+C:\Users\snib\Documents\CSPROJ\Stationer\Stationer\obj\Debug\net6.0\Stationer.csproj.CoreCompileInputs.cache

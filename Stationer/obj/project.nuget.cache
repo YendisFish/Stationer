@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qYzz+FaJmtmTBjDglvMjOn1FxkSQPHQ3hVWNAlRV7WgLjfwq7gh9miiUGi0PrNVgZ2ZuabfU/qLIDjtl00pmeg==",
+  "dgSpecHash": "d5uzRBHYlsSj0mOiGQJU9/D3kPIrrfdbmkOAsHG/0EEipK4TURdb1DI2WbelO0fhb3dHXgFWJ/MmvodlL2fpeQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\snib\\Documents\\CPPROJ\\Stationer\\Stationer\\Stationer.csproj",
+  "projectFilePath": "C:\\Users\\snib\\Documents\\CSPROJ\\Stationer\\Stationer\\Stationer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\snib\\.nuget\\packages\\dsharpplus\\4.1.0\\dsharpplus.4.1.0.nupkg.sha512",
     "C:\\Users\\snib\\.nuget\\packages\\emzi0767.common\\2.6.2\\emzi0767.common.2.6.2.nupkg.sha512",
