@@ -13,6 +13,8 @@ namespace Stationer.Main
 
         public static async Task MainAsync()
         {
+            List<DiscordChannel> openTickets = new();
+
             DiscordClient client = new DiscordClient(new DiscordConfiguration()
             {
                 Token = "",
@@ -26,9 +28,6 @@ namespace Stationer.Main
                     DiscordChannel channel = await e.Guild.CreateChannelAsync("tickets", ChannelType.Text);
                     await channel.SendMessageAsync("Hello members! You may create a ticket by reacting to this message! (Any Reaction!)");
                 }
-
-                await client.ConnectAsync();
-                await Task.Delay(-1);
             };
 
             client.MessageReactionAdded += async (s, e) =>
@@ -45,13 +44,26 @@ namespace Stationer.Main
                         await channel.AddOverwriteAsync(await e.Guild.GetMemberAsync(e.User.Id), Permissions.SendMessages);
                         await channel.AddOverwriteAsync(await e.Guild.GetMemberAsync(e.User.Id), Permissions.ReadMessageHistory);
 
-                        await channel.SendMessageAsync("<@&928746357693481080> " + $"<@!{e.User.Id}>");
+                        await channel.SendMessageAsync("<@&928746357693481080> " + $"<@!{e.User.Id}> REACT TO THIS MESSAGE TO CLOSE THIS TICKET");
+
+                        openTickets.Add(channel);
                     }
                 }
 
-                await client.ConnectAsync();
-                await Task.Delay(-1);
+                if (e.Message.Author.Id.ToString() == "940803522352525342")
+                {
+                    foreach (DiscordChannel ticket in openTickets)
+                    {
+                        if (ticket.Id == e.Message.Channel.Id)
+                        {
+                            await ticket.DeleteAsync();
+                        }
+                    }
+                }
             };
+
+            await client.ConnectAsync();
+            await Task.Delay(-1);
         }
     }
 }
